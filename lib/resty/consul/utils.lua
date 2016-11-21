@@ -18,7 +18,7 @@ function _M.parse_body(body)
 end
 
 
-local function check_servers(servers)
+function _M.check_servers(servers)
     if not servers or type(servers) ~= "table" or not next(servers) then
         return false
     end
